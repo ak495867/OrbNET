@@ -1,4 +1,8 @@
-## Result Evaluation
+# Result Evaluation
+
+![OrbNet Results](image.png)
+
+---
 
 | Metric | Evaluation |
 |---|---|
@@ -12,6 +16,16 @@
 | **Signal Behavior** | The strategy appears to extract repeated small signals rather than relying on large individual predictions. |
 | **Current Assessment** | The experiment shows a meaningful validation signal, but robustness has not yet been established. |
 | **Next Validation Step** | Test across unseen periods, multiple assets, transaction costs, slippage, turnover, and drawdown. |
+
+---
+
+## Key observation:
+
+- Training loss decreases from roughly `2.3 × 10⁻⁴` to the low `10⁻⁶` range.
+- Validation loss also falls rapidly and remains relatively stable afterward.
+- The train/validation curves do not show a large late-stage divergence in this run.
+
+---
 
 ### Summary
 
